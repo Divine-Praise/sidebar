@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 155px;
+    margin-left: 3px;
     background-color: var(--main-border);
     border-radius: 15px;
     border: 1px solid var(--border-line);
