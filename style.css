@@ -1,0 +1,237 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --background-color: #fff;
+    --text-color: #888686;
+    --text-hover-color: #292828;
+    --padding-inline: 20px;
+    --margin-left: 5px;
+    --header-font-size: 1.5rem;
+    --all-text-font-size: 0.75rem;
+    --font-weight: 500;
+    --main-border: #efeaea;
+    --border-line: rgb(197, 195, 195);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-border);
+}
+
+.border{
+    width: 270px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 155px;
+    background-color: var(--main-border);
+    border-radius: 15px;
+    border: 1px solid var(--border-line);
+    position: fixed;
+}
+
+main {
+    border: 1px solid var(--border-line);
+    width: 250px;
+    height: 98vh;
+    border-radius: 15px;
+    background-color: var(--background-color);
+}
+
+.padding{
+    padding-inline: 15px;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo .img-logo{
+    width: 32px;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    background-color: darkgoldenrod;
+}
+
+.logo img{
+    width: 30px;
+}
+
+.logo p{
+    color: var(--text-hover-color);
+    font-size: var(--header-font-size);
+    font-weight: var(--font-weight);
+    margin-left: 15px;
+}
+
+/* sales------- */
+.sales{
+    border: 1px solid var(--border-line);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-inline: var(--padding-inline);
+    border-radius: 10px;
+    background-color: var(--main-border);
+    margin-top: 30px;
+    padding-block: 5px;
+}
+
+.sales .cash-emoji{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: grid;
+    place-content: center;
+    margin-left: 5px;
+}
+
+.sales .cash-emoji img{
+    width: 20px;
+}
+
+.sales .content{
+    margin-left: 10px;
+}
+
+.sales .content h3{
+    font-size: 0.8rem;
+    font-weight: var(--font-weight);
+    color: var(--text-hover-color);
+}
+
+.sales .content p{
+    font-size: 0.7rem;
+    color: var(--text-color);
+}
+
+.sales .angle-arrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 9px;
+}
+
+.sales .angle-arrow i{
+    font-size: 0.6rem;
+    cursor: pointer;
+}
+
+/* user-profile */
+.user-profile{
+    display: flex;
+    align-items: center;
+    padding-block: 8px;
+    margin-inline: var(--padding-inline);
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.user-profile:hover{
+    background-color: var(--main-border);
+    border: 1px solid var(--border-line);
+    transition: all ease-in-out .2s;
+}
+
+.user-profile:hover .icon{
+    color: var(--text-hover-color);
+    transition: all ease-in-out .2s;
+}
+
+.user-profile:hover .user-p{
+    color: var(--text-hover-color);
+    transition: all ease-in-out .2s;
+}
+
+.icon {
+    font-size: 0.9rem;
+    margin-left: 0.7rem;
+    color: var(--text-color);
+}
+
+.bxx{
+    font-size: 1rem;
+}
+
+.user-profile .user-p{
+    font-size: var(--all-text-font-size);
+    color: var(--text-color);
+    margin-left: 0.7rem;
+}
+
+/* sales analytics */
+.sales-an{
+    margin-block: 10px;
+}
+
+.sales-an p{
+    font-size: .65rem;
+    margin-left: 30px;
+    color: var(--text-color);
+}
+
+.align{
+    margin-top: 0px;
+}
+
+/* User details */
+.user-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: 15px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 22px;
+}
+
+.user-details .profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+    background-color: #adacac;
+}
+
+.user-details .profile img{
+    width: 37px;
+    margin-top: 5px;
+}
+
+.user-details .details{
+    margin-left: 10px;
+}
+
+.user-details .details h3{
+    font-size: 0.8rem;
+    font-weight: var(--font-weight);
+    color: var(--text-hover-color);
+}
+
+.user-details .details p{
+    font-size: 0.7rem;
+    color: var(--text-color);
+}
