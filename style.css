@@ -67,6 +67,7 @@ main {
     display: grid;
     place-content: center;
     background-color: darkgoldenrod;
+    cursor: pointer;
 }
 
 .logo img{
@@ -140,9 +141,9 @@ main {
 .user-profile{
     display: flex;
     align-items: center;
-    padding-block: 8px;
+    padding-block: 6.5px;
     margin-inline: var(--padding-inline);
-    border-radius: 10px;
+    border-radius: 8px;
     margin-top: 15px;
     cursor: pointer;
     transition: all ease-in-out .2s;
@@ -234,4 +235,57 @@ main {
 .user-details .details p{
     font-size: 0.7rem;
     color: var(--text-color);
+}
+
+/* Actives- */
+.border.active{
+    width: 85px;
+    /* transition: all ease-in-out .1s; */
+}
+
+main.active{
+    width: 65px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* transition: all ease-in-out .1s; */
+}
+
+.sales.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5px;
+}
+
+.cash-emoji.active{
+    margin-left: 0px;
+}
+
+#p1.active,#p2.active,#p3.active,#p4.active,#p5.active,#p6.active,#p7.active,#p8.active,#p9.active,#p10.active,#p11.active,#p12.active,#p13.active{
+    display: none;
+}
+
+#h1.active,#h2.active,#h3.active{
+    display: none;
+}
+
+#user.active,#user1.active,#user2.active,#user3.active,#user4.active,#user5.active,#user6.active,#user7.active,#user8.active {
+    margin-left: 0px;
+    padding-inline: 10px;
+}
+
+#sales1.active,#sales2.active{
+    margin-left: 0px;
+}
+
+.details.active{
+    display: none;
+}
+
+.content.active{
+    display: none;
 }
