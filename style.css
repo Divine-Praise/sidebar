@@ -18,7 +18,24 @@
     --all-text-font-size: 0.75rem;
     --font-weight: 500;
     --main-border: #efeaea;
+    --hover-color: #efeaea;
     --border-line: rgb(197, 195, 195);
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --background-color: #282828;
+        --text-color: #888686;
+        --text-hover-color: #eeeeee;
+        --padding-inline: 20px;
+        --margin-left: 5px;
+        --header-font-size: 1.5rem;
+        --all-text-font-size: 0.75rem;
+        --font-weight: 500;
+        --main-border: #efeaea;
+        --hover-color: #574f4f;
+        --border-line: rgb(97, 87, 87);
+    }
 }
 
 body{
@@ -89,7 +106,7 @@ main {
     align-items: center;
     margin-inline: var(--padding-inline);
     border-radius: 10px;
-    background-color: var(--main-border);
+    background-color: var(--hover-color);
     margin-top: 30px;
     padding-block: 5px;
 }
@@ -135,6 +152,7 @@ main {
 .sales .angle-arrow i{
     font-size: 0.6rem;
     cursor: pointer;
+    color: var(--text-color);
 }
 
 /* user-profile */
@@ -150,7 +168,7 @@ main {
 }
 
 .user-profile:hover{
-    background-color: var(--main-border);
+    background-color: var(--hover-color);
     border: 1px solid var(--border-line);
     transition: all ease-in-out .2s;
 }
