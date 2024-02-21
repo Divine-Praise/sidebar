@@ -32,6 +32,7 @@ const details = document.querySelector('.details');
 const content = document.querySelector('.content');
 const sales = document.querySelector('.sales');
 const cash = document.querySelector('.cash-emoji');
+var icon = document.getElementById('icon');
 
 // console.log(details);
 
@@ -70,4 +71,15 @@ Logo.addEventListener('click', ()=>{
     content.classList.toggle('active');
     sales.classList.toggle('active');
     cash.classList.toggle('active');
+    icon.classList.toggle('active');
 });
+
+icon.onclick = function(){
+    document.body.classList.toggle('dark-theme');
+
+    if(document.body.classList.contains('dark-theme')){
+        icon.src = "sun.png";
+    }else{
+        icon.src = "moon.png";
+    }
+}
